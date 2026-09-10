@@ -525,4 +525,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ==========================================================================
+     8. TESTIMONIALS 3-REVIEW SWITCHER
+     ========================================================================== */
+  const testimonialCards = document.querySelectorAll('.testimonial-person-card');
+  const testimonialPanes = document.querySelectorAll('.testimonial-content-pane');
+  const reviewDots = document.querySelectorAll('.review-dot');
+
+  function switchReview(index) {
+    testimonialCards.forEach((card, idx) => {
+      const isActive = idx === index;
+      card.classList.toggle('active', isActive);
+      card.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    testimonialPanes.forEach((pane, idx) => {
+      const isActive = idx === index;
+      if (isActive) {
+        pane.hidden = false;
+        void pane.offsetWidth;
+        pane.classList.add('active');
+      } else {
+        pane.classList.remove('active');
+        pane.hidden = true;
+      }
+    });
+
+    reviewDots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === index);
+    });
+  }
+
+  testimonialCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const reviewIndex = parseInt(card.getAttribute('data-review'), 10);
+      if (!isNaN(reviewIndex)) {
+        switchReview(reviewIndex);
+      }
+    });
+  });
+
+  reviewDots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const dotIndex = parseInt(dot.getAttribute('data-dot'), 10);
+      if (!isNaN(dotIndex)) {
+        switchReview(dotIndex);
+      }
+    });
+  });
+
 });

@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2.2">
+  <link rel="stylesheet" href="styles.css?v=2.3">
 </head>
 <body>
 
@@ -336,11 +336,6 @@
               Amaraja. My Home Constructions. Projects across Telangana and Andhra Pradesh: each one proof that bringing the factory to site isn't a pitch, it's how we work.
             </p>
           </div>
-
-          <div class="title-nav-arrows">
-            <button class="nav-arrow-btn" aria-label="Previous project">&larr;</button>
-            <button class="nav-arrow-btn active" aria-label="Next project">&rarr;</button>
-          </div>
         </div>
 
         <!-- 3 Tall Vertical Cards with Dark Bottom Overlays as in Reference -->
@@ -416,11 +411,6 @@
               We eliminate the uncertainty of conventional suppliers with reliable on-site casting engineering.
             </p>
           </div>
-
-          <div class="title-nav-arrows">
-            <button class="nav-arrow-btn" aria-label="Previous card">&larr;</button>
-            <button class="nav-arrow-btn active" aria-label="Next card">&rarr;</button>
-          </div>
         </div>
 
         <div class="pillars-row">
@@ -428,11 +418,6 @@
           <div class="pillar-column-card">
             <div class="pillar-top-badge">
               <span class="pillar-index">01</span>
-              <span class="pillar-circle-arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M1.5 10.5L10.5 1.5M10.5 1.5H3M10.5 1.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
             </div>
             <div class="pillar-portrait-graphic">
               <img src="assets/images/centering-equipment.jpg" alt="Mobile machinery mobilization" width="300" height="320">
@@ -446,11 +431,6 @@
           <div class="pillar-column-card">
             <div class="pillar-top-badge">
               <span class="pillar-index">02</span>
-              <span class="pillar-circle-arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M1.5 10.5L10.5 1.5M10.5 1.5H3M10.5 1.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
             </div>
             <div class="pillar-portrait-graphic">
               <img src="assets/images/cement-bricks.jpg" alt="Every size standard or custom" width="300" height="320">
@@ -464,11 +444,6 @@
           <div class="pillar-column-card">
             <div class="pillar-top-badge">
               <span class="pillar-index">03</span>
-              <span class="pillar-circle-arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M1.5 10.5L10.5 1.5M10.5 1.5H3M10.5 1.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
             </div>
             <div class="pillar-portrait-graphic">
               <img src="assets/images/amaraja_site.jpg" alt="Already trusted at scale" width="300" height="320">
@@ -482,11 +457,6 @@
           <div class="pillar-column-card">
             <div class="pillar-top-badge">
               <span class="pillar-index">04</span>
-              <span class="pillar-circle-arrow">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M1.5 10.5L10.5 1.5M10.5 1.5H3M10.5 1.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
             </div>
             <div class="pillar-portrait-graphic">
               <img src="assets/images/precast-fencing.jpg" alt="Telangana, Andhra Pradesh and Pan-India" width="300" height="320">
@@ -725,35 +695,112 @@
               High-output developers depend on MLR on-site manufacturing to eliminate bulk transport bottlenecks and schedule guesswork.
             </p>
             
-            <div class="testimonial-person-card">
-              <img src="assets/images/cement-bricks.jpg" alt="Construction project site lead" class="person-avatar" width="120" height="120">
-              <div class="person-details">
-                <div class="person-name">Industrial Projects Division</div>
-                <div class="person-title">Amaraja Infrastructure</div>
-              </div>
+            <!-- 3 Client Review Cards / Tabs -->
+            <div class="testimonial-clients-stack" role="tablist" aria-label="Client Testimonials">
+              <button class="testimonial-person-card active" data-review="0" role="tab" aria-selected="true" aria-controls="review-pane-0" id="tab-review-0">
+                <img src="assets/images/amaraja_site.jpg" alt="Amaraja Infrastructure project" class="person-avatar" width="120" height="120">
+                <div class="person-details">
+                  <div class="person-name">Industrial Projects Division</div>
+                  <div class="person-title">Amaraja Infrastructure &bull; Tirupati</div>
+                </div>
+              </button>
+
+              <button class="testimonial-person-card" data-review="1" role="tab" aria-selected="false" aria-controls="review-pane-1" id="tab-review-1">
+                <img src="assets/images/precast_project.jpg" alt="My Home Constructions project" class="person-avatar" width="120" height="120">
+                <div class="person-details">
+                  <div class="person-name">Chief Project Engineer</div>
+                  <div class="person-title">My Home Constructions &bull; Hyderabad</div>
+                </div>
+              </button>
+
+              <button class="testimonial-person-card" data-review="2" role="tab" aria-selected="false" aria-controls="review-pane-2" id="tab-review-2">
+                <img src="assets/images/manufacturing-plant.jpg" alt="Aparna Enterprises project" class="person-avatar" width="120" height="120">
+                <div class="person-details">
+                  <div class="person-name">Head of Procurement</div>
+                  <div class="person-title">Aparna Enterprises &bull; Commercial Enclave</div>
+                </div>
+              </button>
             </div>
           </div>
 
           <div class="testimonial-right-col">
-            <div class="big-quote-mark">&ldquo;</div>
-            <blockquote class="testimonial-quote">
-              Most suppliers make you wait for convoys and absorb 10% transit chipping. MLR brought the factory to our site, casting bricks to our daily pace with zero road breakage and complete quality control.
-            </blockquote>
-            <div class="big-quote-mark quote-close">&rdquo;</div>
+            <!-- Review 1: Amaraja Infrastructure -->
+            <div class="testimonial-content-pane active" id="review-pane-0" role="tabpanel" aria-labelledby="tab-review-0">
+              <div class="big-quote-mark">&ldquo;</div>
+              <blockquote class="testimonial-quote">
+                Most suppliers make you wait for convoys and absorb 10% transit chipping. MLR brought the factory to our site, casting bricks to our daily pace with zero road breakage and complete quality control.
+              </blockquote>
+              <div class="big-quote-mark quote-close">&rdquo;</div>
 
-            <div class="quote-metrics-row">
-              <div class="quote-metric">
-                <span class="quote-stat">180,000+</span>
-                <span class="quote-label">Blocks cast on-site</span>
+              <div class="quote-metrics-row">
+                <div class="quote-metric">
+                  <span class="quote-stat">180,000+</span>
+                  <span class="quote-label">Blocks cast on-site</span>
+                </div>
+                <div class="quote-metric">
+                  <span class="quote-stat text-orange">0.0%</span>
+                  <span class="quote-label">Transit breakage</span>
+                </div>
+                <div class="quote-metric">
+                  <span class="quote-stat">IS 2185</span>
+                  <span class="quote-label">Lab certified</span>
+                </div>
               </div>
-              <div class="quote-metric">
-                <span class="quote-stat text-orange">0.0%</span>
-                <span class="quote-label">Transit breakage</span>
+            </div>
+
+            <!-- Review 2: My Home Constructions -->
+            <div class="testimonial-content-pane" id="review-pane-1" role="tabpanel" aria-labelledby="tab-review-1" hidden>
+              <div class="big-quote-mark">&ldquo;</div>
+              <blockquote class="testimonial-quote">
+                Handling perimeter fencing for our township used to be a major logistic bottleneck. MLR mobilized on-site precast machinery and delivered 4,500+ running feet of compound wall panels 18 days ahead of our milestone.
+              </blockquote>
+              <div class="big-quote-mark quote-close">&rdquo;</div>
+
+              <div class="quote-metrics-row">
+                <div class="quote-metric">
+                  <span class="quote-stat">4,500+ Rft</span>
+                  <span class="quote-label">Precast walls installed</span>
+                </div>
+                <div class="quote-metric">
+                  <span class="quote-stat text-orange">18 Days</span>
+                  <span class="quote-label">Ahead of schedule</span>
+                </div>
+                <div class="quote-metric">
+                  <span class="quote-stat">0.0%</span>
+                  <span class="quote-label">Road transit damage</span>
+                </div>
               </div>
-              <div class="quote-metric">
-                <span class="quote-stat">IS 2185</span>
-                <span class="quote-label">Lab certified</span>
+            </div>
+
+            <!-- Review 3: Aparna Enterprises -->
+            <div class="testimonial-content-pane" id="review-pane-2" role="tabpanel" aria-labelledby="tab-review-2" hidden>
+              <div class="big-quote-mark">&ldquo;</div>
+              <blockquote class="testimonial-quote">
+                The consistency of on-site automated batching gave our structural consultants complete peace of mind. Every single CC block met our strict compressive strength tolerances without a single delivery disruption.
+              </blockquote>
+              <div class="big-quote-mark quote-close">&rdquo;</div>
+
+              <div class="quote-metrics-row">
+                <div class="quote-metric">
+                  <span class="quote-stat">320,000+</span>
+                  <span class="quote-label">High-strength CC bricks</span>
+                </div>
+                <div class="quote-metric">
+                  <span class="quote-stat text-orange">100%</span>
+                  <span class="quote-label">Batch uniformity</span>
+                </div>
+                <div class="quote-metric">
+                  <span class="quote-stat">M20 / M25</span>
+                  <span class="quote-label">Concrete grades</span>
+                </div>
               </div>
+            </div>
+
+            <!-- Review Selector Dots -->
+            <div class="testimonial-dots-row">
+              <button class="review-dot active" data-dot="0" aria-label="Show review 1: Amaraja Infrastructure"></button>
+              <button class="review-dot" data-dot="1" aria-label="Show review 2: My Home Constructions"></button>
+              <button class="review-dot" data-dot="2" aria-label="Show review 3: Aparna Enterprises"></button>
             </div>
           </div>
 
