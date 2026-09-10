@@ -51,13 +51,14 @@ html.lenis, html.lenis body {
   --color-hairline-dark: rgba(255, 255, 255, 0.12);
   --color-white: #FFFFFF;
 
-  /* PRIMARY: Vibrant Industrial Safety Orange (#F68B33) */
-  --color-primary: #F68B33;
-  --color-brand-orange: #F68B33;
-  --color-brand-orange-dark: #DE7522;
-  --color-brand-orange-light: #FFA65E;
-  --color-brand-orange-glow: rgba(246, 139, 51, 0.35);
-  --color-brand-orange-subtle: rgba(246, 139, 51, 0.12);
+  /* PRIMARY: WCAG AA Certified Vibrant Industrial Safety Orange (#BA4E05) */
+  --color-primary: #BA4E05;               /* 5.02:1 contrast ratio with pure white text (Passes WCAG AA) */
+  --color-primary-bright: #F68B33;        /* 8.03:1 contrast on dark island background (Passes WCAG AAA) */
+  --color-brand-orange: #BA4E05;
+  --color-brand-orange-dark: #9E3F00;     /* 6.64:1 contrast ratio with white text (Passes WCAG AA) */
+  --color-brand-orange-light: #F68B33;
+  --color-brand-orange-glow: rgba(186, 78, 5, 0.35);
+  --color-brand-orange-subtle: rgba(186, 78, 5, 0.12);
 
   /* SECONDARY: Teal Blue / Slate Steel (#486A7E) */
   --color-secondary: #486A7E;
@@ -104,6 +105,10 @@ html {
 
 body {
   background-color: var(--bg-canvas);
+  background-image: url("assets/images/brick-pattern.svg");
+  background-repeat: repeat;
+  background-size: 140px 70px;
+  background-attachment: fixed;
   color: var(--color-body);
   font-family: var(--font-main);
   font-weight: 450;
