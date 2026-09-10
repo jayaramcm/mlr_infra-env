@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2.5">
+  <link rel="stylesheet" href="styles.css?v=2.8">
 </head>
 <body>
 
@@ -97,91 +97,68 @@
 
   <main id="main-content">
     
-    <!-- 1. HERO SECTION (Grand Architectural Gatefold matching Reference) -->
+    <!-- 1. HERO SECTION (Immersive Near Full-Width with Inset Left Island) -->
     <section id="hero" class="hero-section">
-      <div class="site-container">
+      <div class="hero-viewport-wrap">
         
-        <div class="hero-cards-wrapper">
-          
-          <!-- LEFT HERO PANEL: Warm Architectural Stone / Linen Card -->
-          <div class="hero-card hero-card-left">
-            
-            <div class="hero-left-top">
-              <!-- Bold Editorial Headline Matching Reference Typographic Weight -->
-              <div class="hero-heading-wrap">
-                <h1 class="hero-title">
-                  We Don't Deliver Bricks.<br>
-                  <span class="hero-title-sub">We Bring the Factory.</span>
-                </h1>
-              </div>
+        <!-- Outer Full-Width Container with Factory Image Background -->
+        <div class="hero-banner-outer">
+          <img src="assets/images/hero-factory-plant.jpg" alt="MLR Infra automated mobile manufacturing plant with on-site CC bricks and crane" class="hero-banner-bg" width="1920" height="1080">
+          <div class="hero-banner-overlay"></div>
 
+          <!-- Inner Left Card (Container within Container) -->
+          <div class="hero-inner-card">
+            <div class="hero-card-content">
+              <!-- Bold Editorial Headline strictly matching reference -->
+              <h1 class="hero-title">
+                We Don't Deliver<br>
+                Bricks.<br>
+                We Bring the<br>
+                Factory.
+              </h1>
+
+              <!-- Narrative Description strictly matching reference -->
               <p class="hero-desc">
                 On-site manufacturing of high-strength CC bricks and modular precast fencing. We mobilize automated machinery directly to your project location &mdash; eliminating road transit breakage, convoy delays, and supply bottlenecks for large-scale infrastructure across India.
               </p>
+
+              <!-- Dual CTA Buttons Horizontally Side-by-Side strictly matching reference -->
+              <div class="hero-btn-row">
+                <a href="#contact" class="btn-hero-quote">
+                  <span>Get a Quote</span>
+                  <span class="btn-hero-arrow" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path d="M1.5 10.5L10.5 1.5M10.5 1.5H3M10.5 1.5V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#estimator" class="btn-hero-estimate">
+                  <span>Estimate Your Order</span>
+                  <span class="btn-calc-tag">CALCULATOR</span>
+                </a>
+              </div>
             </div>
 
-            <!-- Dual Pill Action Buttons -->
-            <div class="hero-btn-row">
-              <a href="#contact" class="btn-dark-pill">
-                <span>Get a Quote</span>
-                <span class="btn-circle-arrow">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M1.5 10.5L10.5 1.5M10.5 1.5H3M10.5 1.5V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-              </a>
-              <a href="#estimator" class="btn-outline-pill">
-                <span>Estimate Your Order</span>
-                <span class="btn-tag">CALCULATOR</span>
-              </a>
-            </div>
-
-          </div>
-
-          <!-- CONNECTING ROTATING CIRCULAR STAMP BADGE (Spanning the seam between panels) -->
-          <div class="hero-connector-stamp" aria-hidden="true">
-            <div class="stamp-outer-ring">
-              <svg class="stamp-rotating-text" viewBox="0 0 160 160">
-                <defs>
-                  <path id="stamp-circle-path" d="M 80, 80 m -58, 0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0" />
-                </defs>
-                <text font-size="10.5" font-weight="700" letter-spacing="3.4" fill="#000000">
-                  <textPath xlink:href="#stamp-circle-path">
-                    SINCE 2024 &bull; WE BRING THE FACTORY &bull;
-                  </textPath>
-                </text>
-              </svg>
-              <div class="stamp-center-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F68B33" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 15 8.5 22 9.3 17 14.2 18.5 21.2 12 17.8 5.5 21.2 7 14.2 2 9.3 9 8.5 12 2"></polygon>
+            <!-- Rotating Brand Stamp Badge overlapping the top-right / right edge -->
+            <div class="hero-card-stamp" aria-hidden="true">
+              <div class="stamp-outer-ring">
+                <svg class="stamp-rotating-text" viewBox="0 0 160 160">
+                  <defs>
+                    <path id="stamp-circle-path" d="M 80, 80 m -56, 0 a 56,56 0 1,1 112,0 a 56,56 0 1,1 -112,0" />
+                  </defs>
+                  <text font-size="10.2" font-weight="700" letter-spacing="3.2" fill="#0C0D0E">
+                    <textPath xlink:href="#stamp-circle-path">
+                      SINCE 2024 &bull; WE BRING THE FACTORY &bull;
+                    </textPath>
+                  </text>
                 </svg>
+                <div class="stamp-center-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F68B33" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15 8.5 22 9.3 17 14.2 18.5 21.2 12 17.8 5.5 21.2 7 14.2 2 9.3 9 8.5 12 2"></polygon>
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- RIGHT HERO PANEL: Soaring Architectural Imagery with Stats Overlay -->
-          <div class="hero-card hero-card-right">
-            <img src="assets/images/hero-color-plant.jpg" alt="MLR Industrial on-site mobile machinery and concrete casting" class="hero-bg-img" width="1000" height="1200">
-            <div class="hero-img-gradient"></div>
-
-            <!-- Bottom Stats Bar Overlaid directly on Image as in Reference -->
-            <div class="hero-stats-bottom">
-              <div class="hero-stat-col">
-                <div class="stat-number">0.0%</div>
-                <div class="stat-label">Transit Loss</div>
-              </div>
-              <div class="stat-divider"></div>
-              <div class="hero-stat-col">
-                <div class="stat-number">100K+</div>
-                <div class="stat-label">Units / Mobilization</div>
-              </div>
-              <div class="stat-divider"></div>
-              <div class="hero-stat-col">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Spec Precision</div>
-              </div>
-            </div>
-
           </div>
 
         </div>
