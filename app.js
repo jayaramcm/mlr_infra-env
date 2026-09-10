@@ -37,7 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
-      if (!targetId || targetId === '#') return;
+      if (!targetId) return;
+
+      // Handle logo and top return links with smooth scroll
+      if (targetId === '#' || this.classList.contains('brand-logo') || this.classList.contains('footer-logo-link')) {
+        e.preventDefault();
+        closeMobileDrawer();
+        if (lenis) {
+          lenis.scrollTo(0, { duration: 1.4 });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        return;
+      }
 
       const targetEl = document.querySelector(targetId);
       if (targetEl) {

@@ -184,7 +184,7 @@ button, input, select, textarea {
   justify-content: center;
   gap: 0.75rem;
   background-color: var(--color-primary);
-  color: #000000;
+  color: #FFFFFF;
   padding: 0.65rem 1.35rem 0.65rem 1.65rem;
   border-radius: var(--radius-pill);
   font-size: 0.9rem;
@@ -196,7 +196,7 @@ button, input, select, textarea {
 
 .btn-nav-pill:hover, .btn-dark-pill:hover {
   background-color: var(--color-brand-orange-dark);
-  color: #000000;
+  color: #FFFFFF;
   box-shadow: 0 8px 24px var(--color-brand-orange-glow);
   transform: translateY(-2px);
 }
@@ -205,18 +205,22 @@ button, input, select, textarea {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.14);
-  color: #000000;
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
 
+.btn-circle-arrow svg path {
+  stroke: #FFFFFF;
+}
+
 .btn-nav-pill:hover .btn-circle-arrow,
 .btn-dark-pill:hover .btn-circle-arrow {
-  background-color: #000000;
-  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
   transform: translate(2px, -2px);
 }
 
@@ -324,7 +328,11 @@ button, input, select, textarea {
 }
 
 .nav-item-estimator {
-  font-weight: 700;
+  font-weight: 600;
+  color: #000000;
+}
+
+.nav-item-estimator:hover {
   color: var(--color-primary);
 }
 
@@ -730,10 +738,21 @@ button, input, select, textarea {
 
 .island-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   letter-spacing: 0.22em;
-  color: var(--color-grey-light);
+  color: var(--color-brand-slate-light);
   text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.65rem;
+}
+
+.island-title {
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
 }
 
 .services-interactive-stack {
@@ -1395,24 +1414,24 @@ button, input, select, textarea {
 
 .results-inner-box .btn-dark-pill {
   background-color: var(--color-primary);
-  color: #000000;
+  color: #FFFFFF;
   font-weight: 700;
 }
 
 .results-inner-box .btn-dark-pill:hover {
   background-color: var(--color-brand-orange-dark);
-  color: #000000;
+  color: #FFFFFF;
   box-shadow: 0 8px 24px var(--color-primary-glow);
 }
 
 .results-inner-box .btn-circle-arrow {
-  background-color: rgba(0, 0, 0, 0.14);
-  color: #000000;
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
 }
 
 .results-inner-box .btn-dark-pill:hover .btn-circle-arrow {
-  background-color: #000000;
-  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
 }
 
 .prefill-notice {
